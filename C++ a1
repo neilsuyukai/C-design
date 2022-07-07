@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n1,max,mini;
+    for(int i=1;i<6;i++)
+    {
+        cin>>n1;
+        if(i==1)
+        {
+            max=n1;
+            mini=n1;
+        }
+        else if(i>1)
+        {
+            if(n1>max)
+               max=n1;
+            if(n1<mini)
+                mini=n1;
+        }
+    }
+    cout<<max<<" "<<mini<<endl;
+}
