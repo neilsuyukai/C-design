@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    switch(n){
+        case 6731:
+        cout<<"Programming";
+        break;
+        case 6920:
+        cout<<"Programming intership";
+        break;
+        case 7268:
+        cout<<"Program language";
+        break;
+        default:
+        cout<<"error";
+    }
+}
