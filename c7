@@ -1,0 +1,31 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+	int n;
+	double pi=0;
+	
+	cin >> n;
+	cout<<" "<<4;
+	for(int i=2; i<=n; i++)
+	{
+		if(i%2!=0)
+		{
+		    pi+=4.0/(2*i-1);
+		    cout<<setw(2)<<"+"<<4<<"/"<<(2*i-1);
+		}
+		else
+		{
+		    pi-=4.0/(2*i-1);
+		    cout<<setw(2)<<"-"<<4<<"/"<<(2*i-1);
+		}
+		if(i%10==0)
+		{
+		    cout<<endl;
+		}
+		
+	}
+	cout << fixed << setprecision(5) <<"="<<4+pi;
+}
